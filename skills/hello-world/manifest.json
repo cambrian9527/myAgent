@@ -1,0 +1,24 @@
+{
+  "name": "hello-world",
+  "version": "1.0.0",
+  "description": "A simple example skill that says hello",
+  "author": "MyAgent",
+  "tags": ["example", "demo"],
+  "tools": [
+    {
+      "name": "hello_greet",
+      "description": "Greet someone by name",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "name": {
+            "type": "string",
+            "description": "Name of the person to greet"
+          }
+        },
+        "required": ["name"]
+      }
+    }
+  ],
+  "systemPrompt": "Be friendly and enthusiastic when greeting people."
+}
